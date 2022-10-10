@@ -75,19 +75,20 @@ body {
     line-height: 1.19;
     color: var(--secondary-color2);
     text-decoration: none
-    }
+}
 
 .logo{
     color: var(--accent-color);
-    }
+}
     
 .logo2{
     color: var(--secondary-color3);  
-    }
+}
 
 .link{
     text-decoration: none;
 }
+
 
 
 /* Site nav */
@@ -119,8 +120,6 @@ body {
 
 .item{
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .current::after{
@@ -137,6 +136,10 @@ body {
 }
 
 .site-nav .link {
+    display: block;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--secondary-text-color); 
     font-weight: 500;
     font-size: 14px;
@@ -319,18 +322,19 @@ body {
 }
 
 .work-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--secondary-color3);
@@ -352,7 +356,7 @@ body {
     margin-top: calc(-1 * var(--set-gap));
 }
 
-.team-list > .item {
+.team-list-item {
     flex-basis: calc(100% / 4 - var(--set-gap));
     margin-left: var(--set-gap);
     margin-top: var(--set-gap);
